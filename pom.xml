@@ -11,6 +11,7 @@
     <properties>
         <frontend.version>1.6</frontend.version>
         <node.version>v8.9.1</node.version>
+        <yarn.version>v1.3.2</yarn.version>
     </properties>
 
     <build>
@@ -21,18 +22,19 @@
                 <version>${frontend.version}</version>
                 <configuration>
                     <nodeVersion>${node.version}</nodeVersion>
+                    <yarnVersion>${yarn.version}</yarnVersion>
                 </configuration>
                 <executions>
                     <execution>
                         <id>install node</id>
                         <goals>
-                            <goal>install-node-and-npm</goal>
+                            <goal>install-node-and-yarn</goal>
                         </goals>
                     </execution>
                     <execution>
-                        <id>npm install</id>
+                        <id>yarn install</id>
                         <goals>
-                            <goal>npm</goal>
+                            <goal>yarn</goal>
                         </goals>
                     </execution>
                     <execution>
