@@ -7,14 +7,16 @@ module.exports = {
     filename: '[name].js'
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loader: "babel-loader",
-        query:{
-          presets: ['flow', 'es2015']
-        }
+        use: [{
+          loader: "babel-loader",
+          options: {
+            presets: ['flow', 'es2015']
+          }
+        }]
       }
     ]
   }

@@ -9,8 +9,8 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <frontend.version>1.4</frontend.version>
-        <node.version>v6.10.3</node.version>
+        <frontend.version>1.6</frontend.version>
+        <node.version>v8.9.1</node.version>
     </properties>
 
     <build>

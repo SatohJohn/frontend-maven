@@ -143,3 +143,4 @@ fabric.properties
 node/
 etc/
 dist/
+package-lock.json
